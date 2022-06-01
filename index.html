@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilmira Pechenikina</title>
+  <link rel="icon" href="img/favicon.png">
+
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <!-- <link rel="prefetch" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="prefetch" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="prefetch" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+
+
+  <!-- STYLES -->
+  <!-- STYLES -->
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- choices -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" /> -->
+
+  <!-- tooltips -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" /> -->
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- choices -->
+  <!-- <script defer src="js/choices.min.js"></script> -->
+
+  <!-- swiper -->
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- GSAP -->
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+
+  <!-- tooltips -->
+  <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
+
+  <!-- jQuery -->
+  <!-- <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+  <!-- my JS -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+	<header class="header">
+	<div class="container header__container">
+		<div class="header__content">
+			<a class="header__logo" href="#">
+				<span>Pechenikina</span>
+				<span>Ilmira</span>
+			</a>
+			<div class="header__right-content">
+				<div class="header__nav nav">
+					<button class="nav__burger my-btn" aria-label="Открытие меню">
+						<span></span>
+					</button>
+					<ul class="nav__list list-reset">
+						<li class="nav__list-item">
+							<a class="nav__list-item-link" href="#exp">Мой опыт</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__list-item-link" href="#faq">FAQ</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__list-item-link" href="#education">Сертификаты</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__list-item-link" href="#contacts">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	<main>
+
+		<section class="hero" id="hero">
+			<div class="container hero__container">
+
+				<div class="hero__content">
+
+					<div class="hero__content-left left">
+						<h1 class="left__title">
+							Привет!
+							<br> Меня зовут Ильмира,
+							<br> я коуч по стандартам ICF
+						</h1>
+
+						<div class="left__descr">
+							Трансформация твоих мыслей в&nbsp;действия
+						</div>
+
+						<a class="left__btn my-btn red-btn" href="#contacts">
+							Записаться
+						</a>
+					</div>
+					<div class="hero__content-right right">
+						<img src="img/ilmira.webp" alt="Фотография" width="300" height="300">
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="exp" id="exp">
+			<div class="container exp__container">
+				<div class="exp__content">
+
+					<h2 class="exp__title title">
+						Мой опыт
+					</h2>
+
+					<ul class="exp__list list-reset">
+						<li class="exp__list-item item">
+							<div class="item__wrap">
+								<b>11,5 лет</b>
+								<br> в&nbsp;продажах
+							</div>
+						</li>
+						<li class="exp__list-item item">
+							<div class="item__wrap">
+								<b>8&nbsp;лет</b>
+								<br> руководства командами
+							</div>
+						</li>
+						<li class="exp__list-item item">
+							<div class="item__wrap">
+								<b>2,5 года</b>
+								<br> девелопер ассортимента товаров для дома
+							</div>
+						</li>
+						<li class="exp__list-item item">
+							<div class="item__wrap">
+								<b>2&nbsp;года</b>
+								<br> проектной деятельности
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="faq" id="faq">
+			<div class="container faq__container">
+
+				<h2 class="faq__title title">
+					Часто задаваемые вопросы
+				</h2>
+
+				<div class="faq__accordion-wrapper accordion">
+
+					<ul class="accordion__list list-reset one">
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<h3 class="accordion__title">
+									Что такое коучинг?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<div class="accordion__content">
+
+									<div class="accordion__descr descr">
+										Это процесс стимулирования мыслительной деятельности, с&nbsp;целью увеличения скорости
+										достижения результата.
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<!--  active - если нужен один открытый -->
+								<h3 class="accordion__title">
+									Как он работает?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<!--  style = "display: block;" - если нужен один открытый -->
+								<div class="accordion__content">
+
+									<p class="accordion__descr descr">
+										🤝 Коуч создает в&nbsp;каждой сессии атмосферу доверия и&nbsp;партнерства. Все свое внимание
+										я&nbsp;буду направлять только на&nbsp;тебя и&nbsp;твою цель.
+									</p>
+
+									<p class="accordion__descr descr">
+										🗣 Тебе будет необходимо отвечать на&nbsp;мои вопросы и&nbsp;откликаться на&nbsp;наблюдения
+										о&nbsp;тебе. Таким образом ты&nbsp;начнешь видеть себя не&nbsp;в&nbsp;плоскости,
+										а&nbsp;в&nbsp;пространстве- на&nbsp;все 360&nbsp;градусов. Со&nbsp;всеми своими чувствами,
+										убеждениями, мыслями.
+									</p>
+
+									<p class="accordion__descr descr">
+										💡 Благодаря этому у&nbsp;тебя будут рождаться новые идеи, открытия, осознания, которые помогут
+										начать движение к&nbsp;новому результату.
+									</p>
+
+									<p class="accordion__descr descr">
+										🎯 В начале каждой сессии мы&nbsp;будем создавать устное соглашение о&nbsp;результате каждой
+										из&nbsp;сессий, чтобы никуда не&nbsp;смещать наш фокус внимания и&nbsp;получить максимум
+										из&nbsp;нашей сессии.
+									</p>
+
+
+								</div>
+							</div>
+						</li>
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<h3 class="accordion__title">
+									Что дает коучинг?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<div class="accordion__content">
+
+									<div class="accordion__descr descr">
+										<ul class="descr__list list-reset">
+											<li class="descr__list-item">&mdash;&nbsp;энергию и&nbsp;вдохновение на&nbsp;перемены;</li>
+											<li class="descr__list-item">&mdash;&nbsp;возможность выйти за&nbsp;рамки привычного мышления;
+											</li>
+											<li class="descr__list-item">&mdash;&nbsp;умение задавать слышать себя;</li>
+											<li class="descr__list-item">&mdash;&nbsp;новые способы решения задач;</li>
+											<li class="descr__list-item">&mdash;&nbsp;привычку брать ответственность за&nbsp;свою жизнь;</li>
+											<li class="descr__list-item">&mdash;&nbsp;навык мыслить результатами.</li>
+										</ul>
+
+										<span>
+											Важно понимать, что результат и&nbsp;скорость его достижения будут зависеть только
+											от&nbsp;тебя:
+											от&nbsp;твоего стремления, ответственности и&nbsp;времени, которое ты&nbsp;даешь себе
+											на&nbsp;&laquo;раскачку&raquo;. Но, я&nbsp;буду оказывать тебе максимальную поддержку, если
+											ты&nbsp;решишься 😉
+										</span>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<h3 class="accordion__title">
+									Коуч &mdash; это тренер?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<div class="accordion__content">
+									<div class="accordion__descr descr">
+										<ul class="descr__list list-reset">
+											<li class="descr__list-item">
+												❌ Коуч - это не&nbsp;тренер. Он&nbsp;не&nbsp;ставит тебе цели. Это делаешь ты&nbsp;и&nbsp;идешь
+												к&nbsp;ней темпом, который удобен тебе.
+											</li>
+											<li class="descr__list-item">
+												❌ Коуч - не&nbsp;психотерапевт. Он&nbsp;не&nbsp;копается в&nbsp;прошлом и&nbsp;детских травмах.
+												Он&nbsp;помогает тебе двигаться вперед за&nbsp;счет твоих сильных сторон.
+											</li>
+											<li class="descr__list-item">
+												❌ Коуч - не&nbsp;консультант. Он&nbsp;не&nbsp;дает советы. Его советы-это только его
+												опыт.
+												Тебе важнее твои мысли и&nbsp;твой опыт.
+											</li>
+										</ul>
+
+										<ul class="descr__list list-reset">
+											<li class="descr__list-item">
+												✅ Коуч - это твое зеркало, которое ёмко и&nbsp;уместно возвращает тебе все, что видит
+												в&nbsp;тебе.
+											</li>
+											<li class="descr__list-item">
+												✅ Коуч - твой партнер. Фактичный, не&nbsp;директивный и&nbsp;нейтральный.
+											</li>
+											<li class="descr__list-item">
+												✅ Коуч - твоя вторая голова, об&nbsp;которую важно и&nbsp;нужно думать, чтобы потом слова
+												превратились в&nbsp;действия.
+											</li>
+
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<h3 class="accordion__title">
+									С какими запросами я могу прийти?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<div class="accordion__content">
+									<div class="accordion__descr descr">
+
+										<ul class="descr__list list-reset">
+											<li class="descr__list-item"> &mdash;&nbsp;смена профессии;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;где искать энергию и&nbsp;вдохновение;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;как стать увереннее в&nbsp;себе;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;увеличение дохода, избавление от&nbsp;долгов;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;организация нового проекта;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;как стать лидером в&nbsp;собственной команде;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;как перестать бояться первого шага;</li>
+											<li class="descr__list-item"> &mdash;&nbsp;избавление от&nbsp;ограничивающих убеждений.</li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<h3 class="accordion__title">
+									Как мне необходимо подготовиться?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<div class="accordion__content">
+									<div class="accordion__descr descr">
+										<span> 📝Сформулировать запрос ко&nbsp;мне, ответив на&nbsp;2&nbsp;вопроса:</span>
+										<ul class="descr__list list-reset">
+											<li class="descr__list-item">
+												<b>
+													&laquo;Что ты&nbsp;хочешь изменить в&nbsp;своей жизни?&raquo;
+												</b>
+											</li>
+											<li class="descr__list-item">
+												<b>&laquo;Как ты&nbsp;хочешь, чтобы тебе в&nbsp;этом помог коуч?&raquo;</b>
+											</li>
+										</ul>
+
+										<p>
+											😍 Настроиться на&nbsp;сессию и&nbsp;продуктивную работу. Помни, что твой результат будет зависеть
+											от&nbsp;твоего желания и&nbsp;ответственности.
+										</p>
+
+										<p>
+											👩‍⚕ Важно! Если ты&nbsp;чувствуешь, что находишься в&nbsp;состоянии выгорания и/или депрессии,
+											то&nbsp;до&nbsp;встречи с
+											коучем необходимо начать терапию с&nbsp;психотерапевтом. Иначе, согласно этике,
+											я&nbsp;не&nbsp;смогу
+											взять тебя на сессию.
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="accordion__list-item">
+							<div class="accordion__wrap" tabindex="0">
+								<h3 class="accordion__title">
+									Сколько сессий мне понадобится?
+								</h3>
+								<span class="accordion__span"></span>
+							</div>
+							<div class="accordion__text">
+								<div class="accordion__content">
+									<div class="accordion__descr descr">
+										<span>
+											🔑 Если запрос короткий и&nbsp;простой, например составить план или подход к&nbsp;решению
+											небольшой
+											задачи, то&nbsp;может хватить и&nbsp;одной сессии.
+										</span>
+
+										<span>
+											🔑🔑🔑🔑 Если это комплексная работа - проработка убеждений, составление плана, работа
+											с&nbsp;осознаниями в&nbsp;процессе, то&nbsp;это пакет из&nbsp;не&nbsp;менее 4&nbsp;сессий. Этот
+											способ более основательный и&nbsp;дающий пространство на&nbsp;рефлексию между сессиями.
+										</span>
+
+										<span>
+											⌚️ Чем больше времени на&nbsp;достижение&nbsp;&mdash; тем больше сессий необходимо.
+										</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="education" id="education">
+			<div class="container education__container">
+
+				<h2 class="education__title title">
+					Мои сертификаты
+				</h2>
+
+				<div class="education__swiper-content">
+					<div class="education__swiper swiper">
+						<div class="education__swiper-wrapper swiper-wrapper">
+							<!-- Slides -->
+							<div class="education__swiper-slide swiper-slide">
+								<img src="img/sert-1.webp" alt="Сертификат об обучении">
+							</div>
+							<div class="education__swiper-slide swiper-slide">
+								<img src="img/sert-2.webp" alt="Сертификат об обучении">
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="education__swiper-pagination swiper-pagination"></div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container contacts__container">
+
+				<h2 class="contacts__title title">
+					Связь со мной
+				</h2>
+
+				<div class="contacts__content">
+
+					<div class="contacts__content-left left">
+						<h3 class="left__subtitle subtitle">
+							Запишись на бесплатную <br> консультацию
+						</h3>
+
+						<ul class="left__messenger list-reset messenger">
+							<li class="messenger__item wa">
+								<a class="messenger__item-link" href="https://wa.me/79671488841" target="_blank">
+									<svg class="whatsapp" width="45" height="45">
+										<use xlink:href="img/sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="messenger__item tg">
+								<a class="messenger__item-link" href="tg://resolve?domain=ilmirunchi" target="_blank">
+									<svg class="telegram" width="45" height="45">
+										<use xlink:href="img/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="contacts__content-right right">
+						<h3 class="right__subtitle subtitle margin">
+							Ищи меня в <br> соц.сетях
+						</h3>
+
+						<ul class="right__list list-reset">
+							<li class="right__list-item">
+								<a class="right__list-item-link" href="https://instagram.com/il_mirunchi/" target="_blank">
+									<!-- <svg class="inst" width="50" height="50">
+										<use xlink:href="img/sprite.svg#inst"></use>
+									</svg> -->
+									<img src="img/inst.png" alt="" width="45" height="45">
+								</a>
+							</li>
+
+							<li class="right__list-item">
+								<a class="right__list-item-link" href="https://vk.com/ilmirunchi" target="_blank">
+									<svg class="vk" width="59" height="59">
+										<use xlink:href="img/sprite.svg#vk"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer">
+  <div class="container footer__container">
+
+    <q><b>Если вы не боитесь сделать очередной шаг, это значит, что намеченный шаг слишком мал для вас</b></q>
+    <cite>Б‌одо Шефер</cite>
+  </div>
+</footer>
+</body>
+
+</html>
