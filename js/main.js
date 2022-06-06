@@ -81,6 +81,13 @@ const sertificatSwiper = new Swiper('.education__swiper', {
   // },
 });
 
+// swiper feedbacks
+
+const feedbackSwiper = new Swiper('.feedback__swiper', {
+  effect: "cards",
+  grabCursor: true,
+});
+
 // SWICH THEME
 
 
@@ -158,4 +165,9 @@ document.querySelector(".close-item-btn").addEventListener("click", function () 
   document.querySelector(".close-item-btn").classList.remove("visible")
   document.querySelector(".more-item-btn").classList.remove("hidden")
   hifgRatingItems.timeScale(2).reverse()
-})
+});
+
+
+
+
+
