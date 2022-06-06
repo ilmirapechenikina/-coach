@@ -88,6 +88,25 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
   grabCursor: true,
 });
 
+
+// go to top
+
+
+jQuery(document).ready(function () {
+  var btn = $('#button');
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '500');
+  });
+});
+
 // SWICH THEME
 
 
@@ -107,29 +126,29 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 // });
 
 
-const toggleThemeBtn = document.getElementById('theme-btn');
-const toggleThemeImg = document.getElementById('theme-img');
+// const toggleThemeBtn = document.getElementById('theme-btn');
+// const toggleThemeImg = document.getElementById('theme-img');
 
 
-function setDarkTheme() {
-  document.body.classList.add('dark')
-  toggleThemeImg.src = 'img/sun.png'
-  localStorage.theme = 'dark'
-}
+// function setDarkTheme() {
+//   document.body.classList.add('dark')
+//   toggleThemeImg.src = 'img/sun.png'
+//   localStorage.theme = 'dark'
+// }
 
-function setLightTheme() {
-  document.body.classList.remove('dark')
-  toggleThemeImg.src = 'img/moon.png'
-  localStorage.theme = 'light'
-}
+// function setLightTheme() {
+//   document.body.classList.remove('dark')
+//   toggleThemeImg.src = 'img/moon.png'
+//   localStorage.theme = 'light'
+// }
 
-toggleThemeBtn.addEventListener('click', () => {
+// toggleThemeBtn.addEventListener('click', () => {
 
-  if (document.body.classList.contains('dark')) setLightTheme()
-  else setDarkTheme()
-})
+//   if (document.body.classList.contains('dark')) setLightTheme()
+//   else setDarkTheme()
+// })
 
-if (localStorage.theme === 'dark') setDarkTheme()
+// if (localStorage.theme === 'dark') setDarkTheme()
 
 
 // TOOLTIPS
@@ -151,23 +170,20 @@ if (localStorage.theme === 'dark') setDarkTheme()
 
 // РАСКРЫТЬ КАРТОЧКИ
 
-const hifgRatingItems = gsap.timeline({ paused: true })
+// const hifgRatingItems = gsap.timeline({ paused: true })
 
-hifgRatingItems
-  .to(".hidden", { duration: .2, opacity: 1, visibility: "visible", display: "inline-flex" })
+// hifgRatingItems
+//   .to(".hidden", { duration: .2, opacity: 1, visibility: "visible", display: "inline-flex" })
 
-document.querySelector(".more-item-btn").addEventListener("click", function () {
-  document.querySelector(".close-item-btn").classList.add("visible")
-  document.querySelector(".more-item-btn").classList.add("hidden")
-  hifgRatingItems.timeScale(1).play()
-})
-document.querySelector(".close-item-btn").addEventListener("click", function () {
-  document.querySelector(".close-item-btn").classList.remove("visible")
-  document.querySelector(".more-item-btn").classList.remove("hidden")
-  hifgRatingItems.timeScale(2).reverse()
-});
-
-
-
+// document.querySelector(".more-item-btn").addEventListener("click", function () {
+//   document.querySelector(".close-item-btn").classList.add("visible")
+//   document.querySelector(".more-item-btn").classList.add("hidden")
+//   hifgRatingItems.timeScale(1).play()
+// })
+// document.querySelector(".close-item-btn").addEventListener("click", function () {
+//   document.querySelector(".close-item-btn").classList.remove("visible")
+//   document.querySelector(".more-item-btn").classList.remove("hidden")
+//   hifgRatingItems.timeScale(2).reverse()
+// });
 
 
